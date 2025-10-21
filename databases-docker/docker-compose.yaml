@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  mariadb:
+    image: mariadb:10.6
+    container_name: my_mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: root     # quick test password
+      MYSQL_DATABASE: mydb
+      MYSQL_USER: user1
+      MYSQL_PASSWORD: pass1
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+

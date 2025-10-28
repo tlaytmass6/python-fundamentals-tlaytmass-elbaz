@@ -1,5 +1,4 @@
 # pymongo.py
-# Simple PyMongo helper functions for the assignment
 
 from pymongo import MongoClient, ReturnDocument
 from bson import ObjectId

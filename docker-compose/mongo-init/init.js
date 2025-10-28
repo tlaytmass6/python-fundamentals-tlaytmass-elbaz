@@ -1,7 +1,5 @@
-// mongo-init/init.js
 db = db.getSiblingDB("admin");
 
-// create app user for the application database
 db.createUser({
   user: "webuser",
   pwd: "WebPass!789",
@@ -12,24 +10,24 @@ const app = db.getSiblingDB("classdb");
 
 app.users.insertMany([
   {
-    username: "jana",
-    email: "jana@example.com",
+    username: "lina",
+    email: "lina@example.com",
     profile: {
-      first_name: "Jana",
+      first_name: "lina",
       last_name: "Moreau",
-      age: 26,
+      age: 24,
       addresses: [
-        { street: "12 Rue du Parc", city: "Nice", country: "FR" }
+        { street: "12 Rue du Parc", city: "Nantes", country: "FR" }
       ]
     },
     roles: ["student"],
     created_at: new Date()
   },
   {
-    username: "marc",
-    email: "marc@example.org",
+    username: "rayane",
+    email: "rayane@example.org",
     profile: {
-      first_name: "Marc",
+      first_name: "Rayane",
       last_name: "Silva",
       age: 31,
       addresses: [

@@ -1,0 +1,8 @@
+
+QDRANT_SERVER_HOST = "127.0.0.1" 
+QDRANT_SERVER_PORT = 6333 
+COLLECTION_NAME = "article_chunks"
+EMBEDDING_MODEL = "all-MiniLM-L6-v2" 
+VECTOR_SIZE = 384
+CSV_FILE = "articles.csv"
+

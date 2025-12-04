@@ -60,7 +60,6 @@ def read_xml(path="data/users.xml"):
         })
     return users
 
-# 4. Compare list vs numpy
 @timer
 def list_sum(n=1_000_00):
     return sum([i for i in range(n)])
